@@ -12,7 +12,7 @@
 	<artifactId>betoData</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>betoData</name>
-	<description>Proyecto de Spring con Spring Data y conexion a base de datos Oracle intento</description>
+	<description>Proyecto de control Personas</description>
 	<url/>
 	<licenses>
 		<license/>
