@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import mx.com.betodata.entities.Persona;
 import mx.com.betodata.service.PersonaService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Controller
@@ -17,11 +19,16 @@ public class PersonaController {
     @Autowired
     private PersonaService personaService;
 
-    @GetMapping("/personas")
+    @GetMapping("/personsList")
     public String getPersonas(Model model) {
         List<Persona> personas = personaService.findAllPersonas();
         model.addAttribute("personas", personas);
-        return "personas/personas";
+        return "persons/personsList";
+    }
+
+    @GetMapping("/addPerson")
+    public String addPerson(Persona person){
+        return "persons/addPerson";
     }
     
 }

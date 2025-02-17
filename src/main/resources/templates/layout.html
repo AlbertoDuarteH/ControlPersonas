@@ -6,13 +6,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <title th:text="${pageTitle} ?: 'Mi Aplicación'"></title>
+        <title th:text="'Mi titulo'"></title>
         <meta charset="UTF-8">
     </head>
     <body>
             <!-- Contenido específico de cada página se insertará aquí -->
         <div class="container mt-4">
-            <div th:replace="~{::content}"></div>
+            
         </div>
     </body>
 </html>
